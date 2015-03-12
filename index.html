@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang=es>
+<head>
+    <meta charset="UTF-8">
+    <title>Lacon Labs</title>
+    <meta name="viewport" content="device=width-device, initial-scale=1, maximum-scale=1"/>
+    <link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/css/style.css"/>
+</head>
+<body>
+    <section class="wrapper">
+        <header class="header--header">
+            <h1 class="header__parrafo">
+                Lacón Labs
+            </h1>
+
+            <h2 class="header__parrafo--second">
+                Diseño WEB eficiente y ágil. El estudio que hace WEBS para humanos.
+            </h2>
+        </header>
+        <section class="precios">
+            <article class="precios--bajo">
+                <img class="precios__imagen" src="static/img/Wallpaper.jpg" alt="Presupuesto-diseño-web-ajustado"/>
+                <p class="precio__representacion"><span class="precios__plan">Plan A</span> - Desde 800€</p>
+                <p class="precio__descripcion">
+                    Se recomienda a pequeñas empresas que normalmente solo necesitan una landing (Una web de una única
+                    pagina). Se pueden entregar indices y mapas de contenidos y los wireframings. Los repositorios de
+                    código serán privados para que nadie te robe tu idea.
+                </p>
+            </article>
+            <article class="precios--alto">
+                <img class="precios__imagen" src="static/img/cover.jpg" alt=""/>
+                <p class="precio__representacion"><span class="precios__plan">Plan B</span> - Desde 1700€</p>
+                <p class="precio__descripcion">
+                    Se recomienda a medianas empresas que necesiten varias páginas de navegación. Se pueden entregar
+                    indices y mapas de contenidos y los wireframings. Los repositorios de
+                    código serán privados para que nadie te robe tu idea.
+                </p>
+            </article>
+        </section>
+        <section class="recomend">
+            <h2 class="card__header">Ellos confían en Lacon Labs</h2>
+            <div class="recomend--stella">
+                <img class="reuse__img" src="static/img/Stella-Marisr.jpg" alt="Stella-Maris"/>
+                <h2 class="recomend__header">Stella Maris</h2>
+                <h3 class="recomend__testimonio">"Un gran diseño y rápidez de entrega"</h3>
+                <p class="recomend__description">Escritora y Cátedrática de francés.</p>
+            </div><div class="recomend--stella">
+                <img class="reuse__img" src="static/img/dimitar.jpg" alt="Dimitar-tsochev"/>
+                <h2 class="recomend__header">Dimitar</h2>
+                <h3 class="recomend__testimonio">"Me enseñó metodologías de desarrollo muy valiosas"</h3>
+                <p class="recomend__description">Estudiante de diseño y desarrollo Web</p>
+            </div>
+        </section>
+        <section class="founders">
+            <h2 class="card__header">Fundadores</h2>
+            <img src="static/img/Juan.jpeg" alt="Founder-Juan-balbuena" class="founders__img"/>
+            <div class="founders__about">
+                <h2 class="founders__about--Juan">Juan Balbuena</h2>
+                <p class="founders__description">Fundador de Lacon Labs, desarrollador Front-end experto en tecnologías
+                    como HTML5, CSS3 y JavaScript. Apasionado de la tecnología, la programación y la gastronomia.
+                </p>
+            </div>
+        </section>
+    </section>
+    <footer class="footer__footer">
+        <div class="footer__location">
+            <h2 class="footer__header">Donde??</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d189131.47882983636!2d-8.608773349999975!3d42.21061115000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd258773a742c675%3A0x1206d4d08aa2614f!2sComarca+de+Vigo%2C+Pontevedra!5e0!3m2!1ses!2ses!4v1425904278683" width="400" height="300" frameborder="0" style="border:0"></iframe>
+        </div>
+        <form class="form" method="post" action="contacto.php">
+            <h3>Contacto</h3>
+            <input class="input" type="text" id="name" name="Nombre" placeholder="Escribe aquí tu nombre" required>
+        <input class="input" name="email" id="email" type="email" placeholder="Email" required/>
+        <br>
+        <label for="range">Presupuesto:</label>
+        <input type="range" name="prize" class="range" required id="range" min="800" max="5500">
+        <div id="contador"></div>
+        <textarea class="mensaje input" id="message" name="Message" cols="40" rows="20"  required
+                  placeholder="Escribe aquí tu mensaje"></textarea>
+            <input class="submit" type="submit"/>
+        </form>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="static/js/codigo.js"></script>
+</body>
+</html>
