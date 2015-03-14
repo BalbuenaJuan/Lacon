@@ -4,15 +4,6 @@ $(document).ready(function(){
 	var name = $("#name");
 	var email = $("#email");
 
-	var menu = $('#menu');
-  	var contenedor = $('#menu-contenedor');
-  	var menu_offset = menu.offset();
-
-
-	$('form').submit(function() {
-		$('input[type=submit]').attr('disabled', 'true');
-	});//FIN DE ENVIO 1 SOLA VEZ
-
 	$('form').submit(function() {
 		var boton = $(this).find(':submit');
 		boton.attr('disabled', 'true');
@@ -30,6 +21,7 @@ $(document).ready(function(){
                 message.before('<p id="bad-message">! Mensaje incorrecto</p>');
                 $("#bad-message").css({"color": "red",
                     "margin-bottom": "0"});
+                message.after("<img id='cancel1' src='static/img/Validate/cancel.png' width='28' height='28' /> ")
         }
         else{
                 message.css({"background": "#C8FDD4",
@@ -37,6 +29,8 @@ $(document).ready(function(){
                 $("#cancel1").remove();
                 $("#ok1").remove();
                 $("#bad-message").remove();
+                message.after("<img id='ok1' src='static/img/Validate/check.png' width='28' height='28' /> ")
+
         }
     });
     email.on("focusout", function(){
@@ -50,6 +44,8 @@ $(document).ready(function(){
                 email.before('<p id="bad-email">! Email incorrecto</p>');
                 $("#bad-email").css({"color": "red",
                     "margin-bottom": "0"});
+                email.after("<img id='cancel2' src='static/img/Validate/cancel.png' width='28' height='28' /> ")
+
         }
         else{
                 email.css({"background": "#C8FDD4",
@@ -58,6 +54,8 @@ $(document).ready(function(){
                 $("#ok2").remove();
                 $("#bad-email").remove();
                 $("#bad-email").remove();
+                email.after("<img id='ok2' src='static/img/Validate/check.png' width='28' height='28' /> ")
+
         }
     });
     name.on("focusout", function(){
@@ -71,6 +69,8 @@ $(document).ready(function(){
                 name.before('<p id="bad-name">! Nombre incorrecto </p>');
                 $("#bad-name").css({"color": "red",
                     "margin-bottom": "0"});
+                name.after("<img id='cancel3' src='static/img/Validate/cancel.png' width='28' height='28' /> ")
+
         }
         else{
                 name.css({"background": "#C8FDD4",
@@ -78,6 +78,8 @@ $(document).ready(function(){
                 $("#cancel3").remove();
                 $("#ok3").remove();
                 $("#bad-name").remove();
+                name.after("<img id='ok3' src='static/img/Validate/check.png' width='28' height='28' /> ")
+
         }
     });//FIN VALIDACIÓN VISUAL EMAIL
 
@@ -85,6 +87,5 @@ $(document).ready(function(){
 	$("#range").change(function(){
 		$("#contador").html( this.value + "€");
 	});
-
 });//FIN DE READY
 

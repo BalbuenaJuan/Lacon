@@ -16,6 +16,9 @@ footer
   text-align center
   overflow hidden
 
+figcaption
+  border-top 1px solid #808080
+
 form
   color blanco
   max-width 600px
@@ -41,13 +44,6 @@ iframe
 .form, .footer__location
   display inline-block
   vertical-align top
-
-
-.founders
-  width 65%
-  margin 0 auto
-  padding-top 3em
-  text-align center
 
 .founders__about
   width 70%
@@ -99,12 +95,19 @@ iframe
   margin-bottom 2em
 
 .header--header
-  background-image url("../img/1.jpg")
+  background-image url("../img/Landing/1.jpg")
   background-repeat no-repeat
   background-size 100%
   height 400px
   position absolute
   width 100%
+
+.header--logo
+  float: left
+
+.header--logo, .header__parrafo
+  display inline-block
+  vert-align top 
 
 .header__parrafo, .header__parrafo--second
   color #fff
@@ -115,7 +118,10 @@ iframe
 
 .header__parrafo
   font-size 3em
+  margin 0 auto
+  text-align center
   top 50px
+  width 300px
 
 .header__parrafo--second
    top 130px
@@ -182,8 +188,9 @@ iframe
 .range
   width 70%
 
-.recomend
+.standar-section
   width 65%
+  padding-top 3em
   text-align center
   margin 0 auto
 
@@ -220,26 +227,24 @@ iframe
   margin-left 23px
   outline 0
 
+.trabajos__webs
+  display inline-block
+  box-shadow 0 0 1em grey
+  margin 50px 8px
 
 @media all and (max-width: 1680px)
-  .founders
+  .standar-section
     width 80%
 
   .precios--bajo, .precios--alto
     width 40%
 
-  .recomend
-    width 80%
-
 @media all and (max-width: 1366px)
-  .founders
+  .standar-section
     width 95%
 
   .precios--bajo, .precios--alto
     width 44%
-
-  .recomend
-    width 95%
 
 @media screen and (max-width: 1280px)
   .recomend__testimonio
@@ -271,6 +276,16 @@ iframe
     width 320px
     padding-left  0
 
+  .header--logo
+    width 100px
+    height 100px
+
+  .trabajos__webs
+    width 420px
+
+  .trabajos__webs--img
+    width 320px
+
   .precios
     padding-top 235px
 
@@ -279,6 +294,16 @@ iframe
     padding 0 .1em
 
 @media screen and (max-width: 419px)
+  .trabajos__webs
+    width 310px
+
+  .trabajos__webs--img
+    width 220px
+
+  .header--logo
+    width 50px
+    height 50px
+
   .header__parrafo
     font-size 1.7rem
     top -15px
