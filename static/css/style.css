@@ -10,6 +10,7 @@ body {
 }
 footer {
   background: #cdcdcd;
+  color: #fff;
   height: auto;
   margin: 3em auto 0 auto;
   padding-bottom: 2em;
@@ -20,12 +21,10 @@ figcaption {
   border-top: 1px solid #808080;
 }
 form {
-  color: blanco;
   max-width: 600px;
   padding: 0 2rem;
   margin: 0 auto;
   text-align: center;
-  color: #fff;
 }
 iframe {
   width: 600px;
@@ -37,7 +36,6 @@ iframe {
   text-align: center;
 }
 .footer__header {
-  color: #fff;
   font-size: 1.4rem;
   padding-left: 2em;
 }
@@ -296,10 +294,10 @@ align-self
     height: 100px;
   }
   .trabajos__webs {
-    width: 420px;
+    width: 95%;
   }
   .trabajos__webs--img {
-    width: 320px;
+    width: 90%;
   }
   .precios {
     padding-top: 235px;
@@ -312,10 +310,10 @@ align-self
 }
 @media screen and (max-width: 419px) {
   .trabajos__webs {
-    width: 310px;
+    width: 95%;
   }
   .trabajos__webs--img {
-    width: 220px;
+    width: 90%;
   }
   .header--logo {
     width: 50px;
