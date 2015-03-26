@@ -83,7 +83,6 @@ $(document).ready(function(){
         }
     });//FIN VALIDACIÓN VISUAL EMAIL
 
-
 	$("#range").change(function(){
 		$("#contador").html( this.value + "€");
 	});
