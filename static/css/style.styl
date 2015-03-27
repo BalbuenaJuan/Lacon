@@ -1,3 +1,5 @@
+header = 400px
+
 html
   box-sizing border-box
 
@@ -112,8 +114,7 @@ ul
   background-image url("../img/Landing/2.jpg")
   background-repeat no-repeat
   background-size 100%
-  height 400px
-  position absolute
+  height header
   width 100%
 
 .header__parrafo, .header__parrafo--second
@@ -132,6 +133,7 @@ ul
 
 .header__parrafo--second
    top 10px
+   margin 0
 
 .input
   border none
@@ -171,7 +173,6 @@ ul
 
 .nav--navigation
   background #577F71
-  padding-top 380.2px
   width 100%
   margin 0 auto
   text-align center
@@ -279,9 +280,16 @@ ul
   .recomend__testimonio
     font-size 1em
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1041px)
+  .header--header
+    height 350px
+
   .recomend--stella
     max-width 260px
+
+@media screen and (max-width: 913px)
+  .header--header
+    height 320px
 
 @media screen and (max-width: 890px)
   .precios--alto, .precios--bajo
@@ -291,11 +299,39 @@ ul
   .recomend--stella
     max-width 360px
 
+
+@media screen and (max-width: 835px)
+  .header--header
+    height 310px
+
+  .menu--lista
+    width 150px
+
+@media screen and (max-width: 811px)
+  .header--header
+    height  300px
+
+  .header__parrafo--second
+    top 0
+    font-size 1.5rem
+
+@media screen and (max-width: 780px)
+  .header--header
+    height auto
+    padding-bottom 3rem
+
 @media screen and (max-width: 661px)
   iframe
     width 90%
     height 300px
     padding-left 0
+
+@media screen and (max-width: 680px)
+  .header--header
+    padding-bottom 0
+
+  .header__parrafo--second
+    display none
 
 @media screen and (max-width: 730px)
   .header__parrafo
