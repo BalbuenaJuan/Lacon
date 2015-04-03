@@ -2,6 +2,8 @@ header = 400px
 
 html
   box-sizing border-box
+  margin 0
+  padding 0
 
 *:after, *:before
   box-sizing inherit
@@ -11,7 +13,6 @@ body
   font-family: 'Open Sans', sans-serif;
   font-size 18px
   margin 0
-  margin-top -.6em
   padding 0
 
 footer
@@ -51,7 +52,7 @@ ul
 
 .footer__header
   font-size 1.4rem
-  padding-left 2em
+  padding-left 2rem
 
 .form, .footer__location
   display inline-block
@@ -66,11 +67,6 @@ ul
   margin 0
   padding 0
 
-.founders__about--Erik
-  text-align left
-  margin 0
-  padding 0
-
 .founders__description
   font-weight 300
   margin 0
@@ -78,27 +74,12 @@ ul
   text-align left
   width 100%
 
-.founders__description--Erik
-  margin 0
-  padding 0
-  text-align left
-  width 100%
-
-.founders__description--Erik, .founders__img--erik
-  display inline-block
-  vertical-align top
-
 .founders__img
   width 100px
   height 100px
   border-radius 50%
 
-.founders__img--erik
-  width 100px
-  height 100px
-  border-radius 50%
-
-.founders__img:hover, .founders__img--erik:hover
+.founders__img:hover
   box-shadow 0 0 1em grey
 
 
@@ -204,6 +185,11 @@ ul
   margin-top 2em
   width 100%
   padding 0
+
+.precios__imagen:hover
+  transition all .5s linear
+  box-shadow 0 0 1em grey
+  opacity 0.5
 
 .precios__plan
   font-size 2rem
@@ -382,7 +368,7 @@ ul
 
   .header__parrafo--second
     font-size 1.1rem
-    top 0px
+    top 0
 
   .precios
     padding-top 140px
