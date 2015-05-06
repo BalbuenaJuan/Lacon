@@ -262,6 +262,9 @@ align-self
   margin: 10px 8px;
 }
 @media all and (max-width: 1680px) {
+  .input {
+    width: 80%;
+  }
   .standar-section {
     width: 80%;
   }
