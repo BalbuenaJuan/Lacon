@@ -1,4 +1,5 @@
 header = 400px
+headers = #808080
 
 html
   box-sizing border-box
@@ -9,8 +10,8 @@ html
   box-sizing inherit
 
 body
-  color #808080
-  font-family: 'Open Sans', sans-serif;
+  color #080808
+  font-family: 'Dosis', sans-serif;
   font-size 18px
   margin 0
   padding 0
@@ -49,6 +50,7 @@ ul
 .card__header
   border-bottom 1px solid #ccc
   text-align center
+  color headers
 
 .footer__header
   font-size 1.4rem
@@ -68,11 +70,15 @@ ul
   padding 0
 
 .founders__description
-  font-weight 300
+  font-weight 200
   margin 0
   padding 0
   text-align left
   width 100%
+
+.founders--description
+  font-size 2rem
+  font-weight 200
 
 .founders__img
   width 100px
@@ -116,12 +122,16 @@ ul
    top 10px
    margin 0
 
+.img--sobreNosotros
+  display inline-block
+  padding-left 1rem
+
 .input
   border none
   border-radius 6px
   display inline-block
   height 50px
-  font-family 'Open Sans'
+  font-family 'Dosis'
   font-size 1.2rem
   margin-top 1rem
   padding 0 0 0 .6em
@@ -144,7 +154,7 @@ ul
 .mensaje
   border none
   border-radius 6px
-  font-family 'Open Sans'
+  font-family 'Dosis'
   font-size 1.2rem
   height 120px
   margin-top 1rem
@@ -174,10 +184,11 @@ ul
   float left
 
 .precio__descripcion
+  font-size 1.4rem
   font-weight 300
-  text-align justify
-  margin-top .4rem
   line-height 1.5rem
+  margin-top .4rem
+  text-align justify
 
 .precios__imagen
   border 1px solid #000000
@@ -194,6 +205,7 @@ ul
 .precios__plan
   font-size 2rem
   font-weight bold
+  color headers
 
 .precio__representacion
   margin 0
@@ -239,7 +251,7 @@ ul
   height 30px
   float left
   font-size 20px
-  font-family 'Open Sans'
+  font-family 'Dosis'
   margin-left 23px
   outline 0
 
