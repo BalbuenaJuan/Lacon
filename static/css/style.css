@@ -136,7 +136,7 @@ ul {
   margin-top: 1rem;
   padding: 0 0 0 0.6em;
   outline: 0;
-  width: 90%;
+  width: 80%;
 }
 .email {
   display: none;
@@ -160,7 +160,7 @@ ul {
   margin-top: 1rem;
   padding: 0.6em 0 0 0.6em;
   outline: 0;
-  width: 90%;
+  width: 80%;
 }
 .nav--navigation {
   background: #577f71;
@@ -262,9 +262,6 @@ align-self
   margin: 10px 8px;
 }
 @media all and (max-width: 1680px) {
-  .input {
-    width: 80%;
-  }
   .standar-section {
     width: 80%;
   }
