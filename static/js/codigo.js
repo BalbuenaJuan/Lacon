@@ -87,4 +87,3 @@ $(document).ready(function(){
 		$("#contador").html( this.value + "€");
 	});
 });//FIN DE READY
-

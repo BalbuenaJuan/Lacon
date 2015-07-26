@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lacon Labs: Plan-B</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Dosis:200' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header class="header--planB">
+    <div class="icon"><a href="#planA"><span class="icon-circle-down"></span></a></div>
+  </header>
+  <main class="main" id="planA">
+    <h1>Plan B By Lacon Labs</h1>
+    <p>  Se recomienda a pequeñas empresas que normalmente solo necesitan una landing (Una web de una única
+      pagina). Se pueden entregar los wireframings y los mockops. Los repositorios de
+      código serán privados para que nadie te robe tu idea. El precio base es de 1600€ .Si tu proyecto tiene un tiempo de acabado urgente haznoslo saber en los comentarios</p>
+  </main>
+  <footer id="contacta" class="footer__footer">
+      <div class="footer__location">
+          <h2 class="footer__header">Donde??</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d189131.47882983636!2d-8.608773349999975!3d42.21061115000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd258773a742c675%3A0x1206d4d08aa2614f!2sComarca+de+Vigo%2C+Pontevedra!5e0!3m2!1ses!2ses!4v1425904278683" width="400" height="300" frameborder="0" style="border:0"></iframe>
+      </div>
+      <form class="form" method="post" action="contacto.php">
+          <h3>Contacto</h3>
+          <input class="input" type="text" id="name" name="nombre" placeholder="Escribe aquí tu nombre" required>
+      <input class="input" name="email" id="email" type="email" placeholder="Email" required/>
+      <br>
+      <label for="range">Presupuesto:</label>
+      <input type="range" name="range" class="range" required id="range" min="800" max="5500">
+      <div id="contador"></div>
+      <textarea class="mensaje input" id="message" name="mensaje" cols="40" rows="20"  required
+                placeholder="Escribe aquí tu mensaje"></textarea>
+          <input class="submit" type="submit"/>
+      </form>
+      <h3>&copy; Lacon Labs 2015 all rights reserved</h3>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/js/codigo.js">
+
+  </script>
+</body>
+</html>

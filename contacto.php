@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST[submit]) && $_POST[nombre] && $_POST[email]  && $_POST[range] != ""){
+if ( isset($_POST[nombre]) && isset($_POST[email])  && isset($_POST[range]) && isset($_POST[mensaje]) != ""){
 
 $nombre = $_POST['nombre'];
 $mail = $_POST['email'];
@@ -23,13 +23,13 @@ $asunto = 'Asunto del mail recibido';
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
 echo "<script type='text/javascript'>
-    window.location.href='http://juanbalbuena.info';
+    window.location.href='http://laconlabs.es';
     </script>";
 }
 else{
     echo "<script type='text/javascript'>
             alert('Escribe los datos :D ');
-            window.location.href='http://juanbalbuena.info';
+            window.location.href='http://laconlabs.es';
          </script>";
 }
 ?>

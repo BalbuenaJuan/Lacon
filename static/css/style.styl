@@ -1,5 +1,58 @@
-header = 400px
 headers = #808080
+
+
+@import "plan-a"
+
+/**
+*
+*BACKGROUND VIDEO
+*
+**/
+
+
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
 
 html
   box-sizing border-box
@@ -46,6 +99,14 @@ nav
 ul
   padding 0
   margin 0
+
+.ancla--video{
+  color: #fff;
+}
+
+.caja--logo
+  text-align center
+  margin 0 auto
 
 .card__header
   border-bottom 1px solid #ccc
@@ -98,11 +159,25 @@ ul
   text-align center
 
 .header--header
-  background-image url("../img/Landing/2.jpg")
+  background-image url("../img/Landing/back3.jpg")
   background-repeat no-repeat
   background-size 100%
-  height header
+  height 400px
   width 100%
+
+.header--planA
+  background-image url("../img/Landing/Wallpaper.jpg")
+  background-size cover
+  repeat no-repeat
+  width 100%
+  height 100vh
+
+.header--planB
+  background-image url("../img/Landing/cover.jpg")
+  background-size cover
+  repeat no-repeat
+  width 100%
+  height 100vh
 
 .header__parrafo, .header__parrafo--second
   color #fff
@@ -142,15 +217,42 @@ ul
 .email
   display none
 
+
+.list--a
+  list-style none
+  padding 1rem 0
+  width 33.3333%
+
+.list--a:hover
+  background #63ffc7
+  color #577F71
+  cursor pointer
+  text-shadow 2px 2px 2px #000000
+
+.lista--navigation
+  -ms-display flex
+  -moz-display flex
+  -webkit-display  flex
+  display flex
+  -ms-justify-content space-around
+  -moz-justify-content space-around
+  -webkit-justify-content space-around
+  justify-content space-around
+
+.logo
+  position relative
+  top 32vh
+  margin 0 auto
+  text-align center
+  max-width 200px
+  height 90px
+  padding-left 50px
+
+
 .menu--lista
   color #ffffff
+  text-decoration none
   padding 1rem 0
-  width 200px
-  display inline-block
-
-.menu--lista:hover
-  color #577F71
-  background #63ffc7
 
 .mensaje
   border none
@@ -165,9 +267,9 @@ ul
 
 .nav--navigation
   background #577F71
-  width 100%
   margin 0 auto
   text-align center
+  width 100%
 
 .precios
   margin 0 auto
@@ -326,11 +428,14 @@ ul
 
   .header__parrafo
     font-size 2rem
-    top 0px
+    top 0
 
   .header__parrafo--second
     font-size 1.5rem
     top 15px
+
+  .nav--navigation
+    margin-top -2rem
 
 @media screen and (max-width: 661px)
   iframe
@@ -341,6 +446,9 @@ ul
 @media screen and (max-width: 680px)
   .header--header
     padding-bottom 0
+
+  .nav--navigation
+    margin-top -4rem
 
 
 @media screen and (max-width: 535px)
@@ -361,6 +469,7 @@ ul
 
   .nav--navigation
     margin-bottom -9rem
+    margin-top -2rem
 
   .trabajos__webs
     width 95%
@@ -395,4 +504,3 @@ ul
 
   .precios
     padding-top 140px
-
