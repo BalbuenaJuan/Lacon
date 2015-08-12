@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+
+		$('#flecha').click(function() {
+		$('#precios').animatescroll({'scrollSpeed':'4000', 'easing':'easeInCubic'});
+	});
+
 	var message = $("#message");
 	var name = $("#name");
 	var email = $("#email");
