@@ -1,3 +1,4 @@
+//jQuery is required to run this code
 $( document ).ready(function() {
 
     scaleVideoContainer();
@@ -37,9 +38,9 @@ function initBannerVideoSize(element){
 function scaleBannerVideoSize(element){
 
     var windowWidth = $(window).width(),
-    windowHeight = $(window).height() + 5,
-    videoWidth,
-    videoHeight;
+        windowHeight = $(window).height() + 5,
+        videoWidth,
+        videoHeight;
 
     console.log(windowHeight);
 
