@@ -1,14 +1,6 @@
 headers = #808080
 
-
 @import "plan-a"
-
-/**
-*
-*BACKGROUND VIDEO
-*
-**/
-
 
 html
   box-sizing border-box
@@ -24,6 +16,7 @@ body
   font-size 18px
   margin 0
   padding 0
+  width 100%
 
 footer
   background #cdcdcd
@@ -43,6 +36,12 @@ form
   margin 0
   text-align center
 
+header
+  margin 0
+  padding 0
+  width 100%
+  position absolute
+
 iframe
   width 600px
   height 400px
@@ -55,6 +54,12 @@ nav
 ul
   padding 0
   margin 0
+
+video
+  margin 0
+  padding 0
+  width 100%
+  height 100%
 
 .ancla--video{
   color: #fff;
@@ -113,6 +118,11 @@ ul
 
 .header__box
   text-align center
+  position absolute
+  width 100%
+  text-align center
+  margin 0 auto
+  top 0
 
 .header--header
   background-image url("../img/Landing/back3.jpg")
@@ -137,22 +147,22 @@ ul
 
 .header__parrafo, .header__parrafo--second
   color #fff
-  font-size 2em
   position relative
+  margin 0 auto
   text-align center
   text-shadow 3px 3px 2px black
 
 .header__parrafo
   font-size 4.5em
-  margin 0 auto
   text-align center
   top 5px
   width auto
 
 .header__parrafo--second
   font-size 3.5rem
-  margin 0
-  top 10px
+  margin 0 auto
+  text-align center
+  top 40px
 
 .img--sobreNosotros
   display inline-block
@@ -319,52 +329,13 @@ ul
   box-shadow 0 0 1em grey
   margin 10px 8px
 
+.wrapper
+  padding-top 56.25%
 
-.homepage-hero-module {
-  border-right: none;
-  border-left: none;
-  position: relative;
-}
-.no-video .video-container video,
-.touch .video-container video {
-  display: none;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster {
-  display: block !important;
-}
-.video-container {
-  position: relative;
-  bottom: 0%;
-  left: 0%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background: #000;
-}
-.video-container .poster img {
-  width: 100%;
-  bottom: 0;
-  position: absolute;
-}
-.video-container .filter {
-  z-index: 100;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.4);
-  width: 100%;
-}
-.video-container video {
-  position: absolute;
-  z-index: 0;
-  bottom: 0;
-}
-.video-container video.fillWidth {
-  width: 100%;
-}
 
-/*
-*FIN VDEO
-*/
+@media screen and (min-height: 719px) and (max-width: 1024px)
+  .icon-circle-down
+    display none
 
 
 @media all and (max-width: 1680px)
@@ -375,8 +346,6 @@ ul
     width 30%
 
 @media all and (max-width: 1366px)
-
-
   .standar-section
     width 95%
 
@@ -388,9 +357,6 @@ ul
     font-size 1em
 
 @media screen and (max-width: 1041px)
-  .header--header
-    height 350px
-
   .recomend--stella
     max-width 260px
 
@@ -408,28 +374,19 @@ ul
 
 
 @media screen and (max-width: 835px)
-  .header--header
-    height 310px
-
   .menu--lista
     width 150px
 
 @media screen and (max-width: 811px)
-  .header--header
-    height  300px
-
   .header__parrafo--second
     top 0
     font-size 1.5rem
 
 @media screen and (max-width: 780px)
-  .header--header
-    padding-bottom 3rem
+  .icon-circle-down
+    display none
 
 @media screen and (max-width: 730px)
-  .header__header
-    height 380px
-
   .header__parrafo
     font-size 2rem
     top 0
@@ -438,8 +395,6 @@ ul
     font-size 1.5rem
     top 15px
 
-  .nav--navigation
-    margin-top -2rem
 
 @media screen and (max-width: 661px)
   iframe
@@ -455,20 +410,6 @@ ul
     margin 0
     width 100%
 
-@media screen and (max-width: 680px)
-  .header--header
-    padding-bottom 0
-
-  .nav--navigation
-    margin-top -4rem
-
-
-@media screen and (max-width: 535px)
-  .header--header
-    height 180px
-
-
-
 @media screen and (max-width: 480px)
   iframe
     width 100%
@@ -479,9 +420,15 @@ ul
     width 100px
     height 100px
 
+  .header__parrafo
+    font-size 1.6rem
+
+  .header__parrafo--second
+    font-size 1.6rem
+
   .nav--navigation
     margin-bottom -9rem
-    margin-top -2rem
+
 
   .trabajos__webs
     width 95%
@@ -511,7 +458,7 @@ ul
     font-size 1.7rem
 
   .header__parrafo--second
-    font-size 1.1rem
+    font-size 1.6rem
     top 0
 
   .precios

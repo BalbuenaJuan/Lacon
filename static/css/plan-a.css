@@ -26,6 +26,7 @@
 .icon-circle-down {
   position: absolute;
   top: 85vh;
+  left: 50%,;
 }
 .icon-circle-down:before {
   content: "\ea43";
